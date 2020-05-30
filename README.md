@@ -1,4 +1,12 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Covid119 Dashboard
+This project's structure is based on the Atomic design system, and uses emotion for styling.
+
+Atomic design
+
+Atomic design, developed by Brad Frost and Dave Olsen, is a methodology for crafting design systems with five fundamental building blocks, which, when combined, promote consistency, modularity, and scalability. In this post, we’re going to explore how these principles are a natural fit for building interfaces in React, and how we can extend the Atomic metaphor in useful ways such that we can map out components which have a dynamic lifecycle inside of an abstract ecosystem.
+
+Atomic design guide - https://bradfrost.com/blog/post/atomic-web-design/
+
 
 ## Available Scripts
 
