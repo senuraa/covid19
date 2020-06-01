@@ -1,12 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from '@emotion/styled';
-import Logo from '../../atoms/Logo';
+import styled from 'styled-components';
+import SearchBox from 'components/atoms/SearchBox';
+import Logo from 'components/atoms/Logo';
 
 const Container = styled.div`
     width: 100%;
-    height: 60px;
-    backgroundcolor: #20232a;
+    height: 70px;
+    background-color: #fff;
+    border-bottom: 1px #e8e9e9 solid;
+    display: flex;
+    flex-direction: row;
 `;
 
 const NavBar = (props) => {
@@ -14,6 +18,7 @@ const NavBar = (props) => {
     return (
         <Container>
             <Logo>{title}</Logo>
+            <SearchBox />
         </Container>
     );
 };

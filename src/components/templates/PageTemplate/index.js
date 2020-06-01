@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
 const Content = styled.div`
     width: 100%;
     margin: 2rem auto;
+    height: 100%;
 `;
 const PageTemplate = (props) => {
     const { header, children } = props;

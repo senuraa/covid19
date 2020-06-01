@@ -1,11 +1,12 @@
 import React from 'react';
 import NavBar from 'components/organisms/NavBar';
+import PageTemplate from 'components/templates/PageTemplate';
 
 const HomePage = () => {
     return (
-        <div>
-            <NavBar title="fdff" />
-        </div>
+        <PageTemplate header={<NavBar />}>
+            <div>Test Content</div>
+        </PageTemplate>
     );
 };
 
