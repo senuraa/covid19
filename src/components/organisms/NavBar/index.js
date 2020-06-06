@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import SearchBox from 'components/atoms/SearchBox';
 import Logo from 'components/atoms/Logo';
+import NavMenu from 'components/molecules/NavMenu';
 
 const Container = styled.div`
     width: 100%;
@@ -12,13 +13,28 @@ const Container = styled.div`
     display: flex;
     flex-direction: row;
 `;
+const LContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+`;
 
 const NavBar = (props) => {
     const { title } = props;
+    const countries = [
+        { title: 'USA', code: 'US' },
+        { title: 'USA', code: 'US' },
+        { title: 'USA', code: 'US' },
+        { title: 'USA', code: 'US' },
+        { title: 'USA', code: 'US' },
+    ];
     return (
         <Container>
-            <Logo>{title}</Logo>
-            <SearchBox />
+            <LContainer>
+                <Logo>{title}</Logo>
+                <SearchBox />
+            </LContainer>
+            <NavMenu countries={countries} />
         </Container>
     );
 };
